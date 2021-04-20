@@ -3,8 +3,11 @@ var vue_box = new Vue(
 
     el : "#vue_box",
     data :{
-        nav_links : [
-            
+        link_list : [
+            "home",
+            "about",
+            "departments",
+            "aricles"
         ],
         index : 0,
     },

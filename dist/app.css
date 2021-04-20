@@ -1,3 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: blue;
+  background-color: black;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.btn_primary {
+  background-color: #3aafbf;
+  border-radius: 3px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+.loginbody {
+  background-image: url("../img/header-image-homepage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  color: white;
+  border: greenyellow 2px solid;
+}
+header .nav_bar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 5%;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+header .nav_bar .nav_bar__links {
+  width: calc(100% - 300px);
+  align-self: center;
+  text-align: right;
+}
+header .nav_bar .nav_bar__links ul {
+  display: inline-block;
+}
+header .nav_bar .nav_bar__links ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 15px 20px;
+}
+header .nav_bar .nav_bar__links ul li :hover {
+  color: #3aafbf;
+}
+header .nav_bar button.btn_primary {
+  padding: 15px 25px;
+}
+header .jumbotron {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  border: red 2px solid;
+}
+header .jumbotron__text {
+  align-self: center;
 }

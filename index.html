@@ -8,7 +8,7 @@
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -22,7 +22,36 @@
 </head>
 <body>
     <div id="vue_box">
-     
+        <header>
+            <div class="nav_bar">
+                <div class="nav_bar__logo">
+                    <img src="img/medical_logo_1x_light.png" alt="logo di avada health">
+                </div>
+                <div class="nav_bar__links">
+                    <ul>
+                        <li v-for=" (link, index_list) in link_list">
+                            {{link}}
+
+                        </li>
+                    </ul>
+                    <button class="btn_primary">
+                        make an appointment
+                    </button>
+                </div>
+
+            </div>
+            <div class="jumbotron loginbody">
+                <div class="jumbotron__text">
+                    <h1>Caring <span>for life</span> </h1>
+                    <p>Kind words can be short and easy to speak, but their echoes are truly endless. Avada Healt focuses on you if it was our own family.</p>
+    
+                    <button class="btn_primary">
+                        learn more
+                    </button>
+                </div>
+            </div>
+
+        </header>
         
 
 

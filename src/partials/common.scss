@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1{
+    font-size: 80px;
+}
+// bottoni
+.btn_primary {
+    background-color: $color_primary;
+    border-radius: 3px;
+    font-size: $text_nav;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.loginbody {
+    background-image: url("../img/header-image-homepage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
