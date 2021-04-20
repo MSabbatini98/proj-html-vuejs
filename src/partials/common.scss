@@ -19,10 +19,7 @@ h1{
         color: $color_primary;
     }
 }
-h2 {
-    font-size: $text_h2;
-    font-weight: 300;
-}
+
 h3 {
     font-size: $text_l;
     font-weight: 300;
@@ -33,6 +30,7 @@ h3 {
 p {
     font-size: $text_m;
     line-height: $line_heigt;
+    font-weight: 300;
 }
 
 // ******** BUTTON
@@ -47,12 +45,41 @@ p {
     color: white;
 
 }
-
+//* jumbotron background
 .loginbody {
     background-image: url("../img/header-image-homepage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
+}
+
+//* intro to every section
+.intro {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    > h2 {
+        position: relative;
+        font-size: $text_h2;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    h2::after{
+        content: "";
+        position: absolute;
+        left: 30%;
+        right: 30%;
+        bottom: -25px;
+        height: 2px;
+        background-color: #d1d1d1;
+    }
+    > img {
+        margin: 60px 0 10px 0;
+    }
+    > p {
+        font-size: $text_l;
+    }
 }
 
 // margins
@@ -65,4 +92,21 @@ p {
 .container {
     max-width: $max;
     margin: auto;
+}
+// ? list socials
+i {
+    border-radius: 5px;
+    color: white;
+}
+.fa-facebook-f {
+    padding: 10px 12px 10px 14px;
+    background-color: #3c5998;
+}
+.fa-twitter {
+    padding: 10px;
+    background-color: #54acee;
+}
+.fa-instagram {
+    padding: 10px 11px;
+    background-color: #3f729b;
 }
