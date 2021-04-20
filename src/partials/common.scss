@@ -5,9 +5,12 @@
 }
 
 body{
-    background-color: black;
+    // background-color: yellow;
     font-family: 'Source Sans Pro', sans-serif;
+    color: $color_text_main;
 }
+
+//************* H1 H2 H3 H4 H5 H6
 h1{
     font-size: 80px;
     font-weight: 300;
@@ -16,7 +19,23 @@ h1{
         color: $color_primary;
     }
 }
-// bottoni
+h2 {
+    font-size: $text_h2;
+    font-weight: 300;
+}
+h3 {
+    font-size: $text_l;
+    font-weight: 300;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+// ********************* TAGS
+p {
+    font-size: $text_m;
+    line-height: $line_heigt;
+}
+
+// ******** BUTTON
 .btn_primary {
     background-color: $color_primary;
     border-radius: 5px;
@@ -37,8 +56,13 @@ h1{
 }
 
 // margins
-@for $i from 1 through 3 {
+@for $i from 1 through 10 {
     .mt_#{$i} {
     margin-top: 10px * $i;
     }
+}
+
+.container {
+    max-width: $max;
+    margin: auto;
 }

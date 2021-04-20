@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: black;
   font-family: "Source Sans Pro", sans-serif;
+  color: #333c4e;
 }
 
 h1 {
@@ -16,6 +16,23 @@ h1 {
 }
 h1 span {
   color: #3aafbf;
+}
+
+h2 {
+  font-size: 46px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 17px;
+  line-height: 2.2;
 }
 
 .btn_primary {
@@ -45,6 +62,39 @@ h1 span {
 
 .mt_3 {
   margin-top: 30px;
+}
+
+.mt_4 {
+  margin-top: 40px;
+}
+
+.mt_5 {
+  margin-top: 50px;
+}
+
+.mt_6 {
+  margin-top: 60px;
+}
+
+.mt_7 {
+  margin-top: 70px;
+}
+
+.mt_8 {
+  margin-top: 80px;
+}
+
+.mt_9 {
+  margin-top: 90px;
+}
+
+.mt_10 {
+  margin-top: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 header {
@@ -97,4 +147,25 @@ header .jumbotron__text p {
 }
 header .jumbotron__text button.btn_primary {
   padding: 15px 35px;
+}
+
+#welcome .welcome__top {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+#welcome .welcome__top p {
+  font-size: 22px;
+}
+#welcome .welcome__bot ul {
+  display: flex;
+}
+#welcome .welcome__bot ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+}
+#welcome .welcome__bot ul li p {
+  color: #747474;
+  margin-top: 15px;
 }
