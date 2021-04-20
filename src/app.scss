@@ -115,7 +115,7 @@ header {
 
         .doc_box {
             background-color: white;
-            margin:0 20px;
+            margin:0 20px 100px 20px;
             // border : red solid 2px;
 
             &__text {
@@ -148,7 +148,29 @@ header {
 
 }
 
-// ************************* SECTION 3 SERVICES
+// ************************* SECTION 3 SERVICE
+#service {
+
+    .service_grid {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 0;
+
+        .service_element {
+            width: 30%;
+            margin: 20px auto;
+            text-align: center;
+            
+
+            p {
+                color: $color_text_light;
+                margin: 20px 0;
+            }
+        }
+    }
+
+
+}
 
 // ************************* SECTION 4 TOUR
 

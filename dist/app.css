@@ -228,7 +228,7 @@ header .jumbotron__text button.btn_primary {
 }
 #meet .meet_body .doc_box {
   background-color: white;
-  margin: 0 20px;
+  margin: 0 20px 100px 20px;
 }
 #meet .meet_body .doc_box__text {
   padding: 40px;
@@ -253,4 +253,19 @@ header .jumbotron__text button.btn_primary {
   display: inline-block;
   list-style: none;
   margin: 20px 10px 0 5px;
+}
+
+#service .service_grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+#service .service_grid .service_element {
+  width: 30%;
+  margin: 20px auto;
+  text-align: center;
+}
+#service .service_grid .service_element p {
+  color: #747474;
+  margin: 20px 0;
 }
