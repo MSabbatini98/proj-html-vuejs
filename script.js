@@ -7,7 +7,7 @@ var vue_box = new Vue(
             "home",
             "about",
             "departments",
-            "aricles"
+            "articles"
         ],
         index : 0,
     },

@@ -10,14 +10,21 @@ body{
 }
 h1{
     font-size: 80px;
+    font-weight: 300;
+    text-transform: capitalize;
+    span {
+        color: $color_primary;
+    }
 }
 // bottoni
 .btn_primary {
     background-color: $color_primary;
-    border-radius: 3px;
+    border-radius: 5px;
     font-size: $text_nav;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    outline: none;
+    border: none;
     color: white;
 
 }
@@ -27,4 +34,11 @@ h1{
     background-size: cover;
     background-repeat: no-repeat;
 
+}
+
+// margins
+@for $i from 1 through 3 {
+    .mt_#{$i} {
+    margin-top: 10px * $i;
+    }
 }

@@ -11,14 +11,21 @@ body {
 
 h1 {
   font-size: 80px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+h1 span {
+  color: #3aafbf;
 }
 
 .btn_primary {
   background-color: #3aafbf;
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  outline: none;
+  border: none;
   color: white;
 }
 
@@ -28,10 +35,21 @@ h1 {
   background-repeat: no-repeat;
 }
 
+.mt_1 {
+  margin-top: 10px;
+}
+
+.mt_2 {
+  margin-top: 20px;
+}
+
+.mt_3 {
+  margin-top: 30px;
+}
+
 header {
   display: flex;
   color: white;
-  border: greenyellow 2px solid;
 }
 header .nav_bar {
   position: fixed;
@@ -43,20 +61,20 @@ header .nav_bar {
   text-transform: uppercase;
   color: white;
 }
-header .nav_bar .nav_bar__links {
+header .nav_bar__links {
   width: calc(100% - 300px);
   align-self: center;
   text-align: right;
 }
-header .nav_bar .nav_bar__links ul {
+header .nav_bar__links ul {
   display: inline-block;
 }
-header .nav_bar .nav_bar__links ul li {
+header .nav_bar__links ul li {
   display: inline-block;
   list-style: none;
   padding: 15px 20px;
 }
-header .nav_bar .nav_bar__links ul li :hover {
+header .nav_bar__links ul li :hover {
   color: #3aafbf;
 }
 header .nav_bar button.btn_primary {
@@ -66,8 +84,17 @@ header .jumbotron {
   display: flex;
   height: 100vh;
   width: 100%;
-  border: red 2px solid;
 }
 header .jumbotron__text {
-  align-self: center;
+  width: 40%;
+  margin-left: 15%;
+  margin-top: 18%;
+}
+header .jumbotron__text p {
+  line-height: 1.3;
+  font-size: 26px;
+  font-weight: 200;
+}
+header .jumbotron__text button.btn_primary {
+  padding: 15px 35px;
 }
