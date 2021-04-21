@@ -143,6 +143,9 @@ header {
                     }
                 }
             }
+            img {
+                width: 100%;
+            }
         }
     }
 
@@ -158,7 +161,8 @@ header {
 
         .service_element {
             width: 30%;
-            margin: 20px auto;
+            padding: 10px;
+            margin: 10px auto;
             text-align: center;
             
 
@@ -174,8 +178,59 @@ header {
 
 // ************************* SECTION 4 TOUR
 
-// ************************* SECTION 5 APPOINTMENT
+#tour {
+    color: white;
+    
+    .intro {
+        padding: 100px 0;
+    }
 
-// ************************* SECTION 6 DIVIDER
+    h2::after{
+        background-color: white;
+    }
+}
+
+// ************************* SECTION 5 SHADES
+#shades {
+    .blue_shades {
+        display: flex;
+        width: 100vw;
+        text-align: center;
+        color: white;
+        border : 1px red solid;
+        .shade{
+            border: 2px solid blue;
+            padding: 15px;
+            p {
+                margin: 20px 0;
+                font-size: $text_m;
+                line-height: 2.0;
+            }
+        }
+
+        .shade1{
+            background-color: $shade1;
+        }
+        .shade2{
+            background-color: $shade2;
+        }
+        .shade3{
+            background-color: $shade3;
+        }
+        button {
+            background-color: transparent;
+            padding: 10px 30px;
+            margin: 40px 0;
+            border: 2px solid white;
+            border-radius: 0px;
+            font-size: $text_s;
+        }
+    }  
+}
+
+
+// ************************* SECTION 6 APPOINTMENT
+
+// ************************* SECTION 7 DIVIDER
 
 // ************************* FOOTER

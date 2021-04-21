@@ -26,6 +26,12 @@ h3 {
     margin-top: 15px;
     text-transform: uppercase;
 }
+h4 {
+    font-size: $text_l;
+    margin: 30px 0;
+    font-weight: 400;
+    text-transform: capitalize;
+}
 // ********************* TAGS
 p {
     font-size: $text_m;
@@ -34,7 +40,8 @@ p {
 }
 
 // ******** BUTTON
-.btn_primary {
+.btn_primary, 
+.btn_shades {
     background-color: $color_primary;
     border-radius: 5px;
     font-size: $text_nav;
@@ -52,7 +59,11 @@ p {
     background-repeat: no-repeat;
 
 }
-
+.loginbody2 {
+    background-image: url("../img/paralax-bg-tour-facilities.jpg");
+    background-size: cover;
+    background-repeat: no-repeat ;
+}
 //* intro to every section
 .intro {
     width: 60%;
@@ -75,7 +86,7 @@ p {
         background-color: #d1d1d1;
     }
     > img {
-        margin: 60px 0 10px 0;
+        margin: 60px 0 20px 0;
     }
     > p {
         font-size: $text_l;
@@ -92,7 +103,10 @@ p {
 .container {
     max-width: $max;
     margin: auto;
+    position: relative;
 }
+
+
 // ? list socials
 i {
     border-radius: 5px;

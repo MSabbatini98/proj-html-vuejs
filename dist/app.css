@@ -25,13 +25,21 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  font-size: 22px;
+  margin: 30px 0;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
 p {
   font-size: 17px;
   line-height: 2.2;
   font-weight: 300;
 }
 
-.btn_primary {
+.btn_primary,
+.btn_shades {
   background-color: #3aafbf;
   border-radius: 5px;
   font-size: 18px;
@@ -44,6 +52,12 @@ p {
 
 .loginbody {
   background-image: url("../img/header-image-homepage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.loginbody2 {
+  background-image: url("../img/paralax-bg-tour-facilities.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -70,7 +84,7 @@ p {
   background-color: #d1d1d1;
 }
 .intro > img {
-  margin: 60px 0 10px 0;
+  margin: 60px 0 20px 0;
 }
 .intro > p {
   font-size: 22px;
@@ -119,6 +133,7 @@ p {
 .container {
   max-width: 1200px;
   margin: auto;
+  position: relative;
 }
 
 i {
@@ -254,6 +269,9 @@ header .jumbotron__text button.btn_primary {
   list-style: none;
   margin: 20px 10px 0 5px;
 }
+#meet .meet_body .doc_box img {
+  width: 100%;
+}
 
 #service .service_grid {
   display: flex;
@@ -262,10 +280,55 @@ header .jumbotron__text button.btn_primary {
 }
 #service .service_grid .service_element {
   width: 30%;
-  margin: 20px auto;
+  padding: 10px;
+  margin: 10px auto;
   text-align: center;
 }
 #service .service_grid .service_element p {
   color: #747474;
   margin: 20px 0;
+}
+
+#tour {
+  color: white;
+}
+#tour .intro {
+  padding: 100px 0;
+}
+#tour h2::after {
+  background-color: white;
+}
+
+#shades .blue_shades {
+  display: flex;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  border: 1px red solid;
+}
+#shades .blue_shades .shade {
+  border: 2px solid blue;
+  padding: 15px;
+}
+#shades .blue_shades .shade p {
+  margin: 20px 0;
+  font-size: 17px;
+  line-height: 2;
+}
+#shades .blue_shades .shade1 {
+  background-color: #3bafbf;
+}
+#shades .blue_shades .shade2 {
+  background-color: #3697c3;
+}
+#shades .blue_shades .shade3 {
+  background-color: #327ec7;
+}
+#shades .blue_shades button {
+  background-color: transparent;
+  padding: 10px 30px;
+  margin: 40px 0;
+  border: 2px solid white;
+  border-radius: 0px;
+  font-size: 14px;
 }
