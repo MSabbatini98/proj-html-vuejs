@@ -304,14 +304,12 @@ header .jumbotron__text button.btn_primary {
   width: 100vw;
   text-align: center;
   color: white;
-  border: 1px red solid;
 }
 #shades .blue_shades .shade {
-  border: 2px solid blue;
   padding: 15px;
 }
 #shades .blue_shades .shade p {
-  margin: 20px 0;
+  margin: 5px 0;
   font-size: 17px;
   line-height: 2;
 }
@@ -327,7 +325,7 @@ header .jumbotron__text button.btn_primary {
 #shades .blue_shades button {
   background-color: transparent;
   padding: 10px 30px;
-  margin: 40px 0;
+  margin: 20px 0 30px 0;
   border: 2px solid white;
   border-radius: 0px;
   font-size: 14px;

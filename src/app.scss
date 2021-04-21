@@ -197,12 +197,12 @@ header {
         width: 100vw;
         text-align: center;
         color: white;
-        border : 1px red solid;
+        // border : 5px red solid;
         .shade{
-            border: 2px solid blue;
+            // border: 2px solid blue;
             padding: 15px;
             p {
-                margin: 20px 0;
+                margin: 5px 0;
                 font-size: $text_m;
                 line-height: 2.0;
             }
@@ -220,7 +220,7 @@ header {
         button {
             background-color: transparent;
             padding: 10px 30px;
-            margin: 40px 0;
+            margin: 20px 0 30px 0;
             border: 2px solid white;
             border-radius: 0px;
             font-size: $text_s;
