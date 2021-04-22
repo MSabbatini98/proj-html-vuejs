@@ -181,6 +181,7 @@ header .nav_bar {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: white;
+  transition: all 0.2s ease-in-out;
 }
 header .nav_bar__links {
   width: calc(100% - 300px);
@@ -219,122 +220,123 @@ header .jumbotron__text p {
 header .jumbotron__text button.btn_primary {
   padding: 15px 35px;
 }
-
-#welcome .welcome__top {
+header .nav_bar.on_scroll {
+  background-color: white !important;
+}
+header .nav_bar.on_scroll ul li {
+  color: #333333 !important;
+}
+header #welcome .welcome__top {
   width: 60%;
   margin: 20px auto;
   text-align: center;
 }
-#welcome .welcome__top > h2 {
+header #welcome .welcome__top > h2 {
   margin: 50px 0 30px 0;
   font-size: 46px;
   font-weight: 200;
 }
-#welcome .welcome__top p {
+header #welcome .welcome__top p {
   font-size: 22px;
 }
-#welcome .welcome__bot ul {
+header #welcome .welcome__bot ul {
   display: flex;
 }
-#welcome .welcome__bot ul li {
+header #welcome .welcome__bot ul li {
   display: inline-block;
   text-align: center;
   padding: 15px;
 }
-#welcome .welcome__bot ul li p {
+header #welcome .welcome__bot ul li p {
   color: #747474;
   margin-top: 15px;
 }
-
-#meet {
+header #meet {
   background-color: #f7f7f7;
 }
-#meet .meet_body {
+header #meet .meet_body {
   display: flex;
   justify-content: space-between;
 }
-#meet .meet_body .doc_box {
+header #meet .meet_body .doc_box {
   background-color: white;
   margin: 0 20px 100px 20px;
 }
-#meet .meet_body .doc_box__text {
+header #meet .meet_body .doc_box__text {
   padding: 40px;
 }
-#meet .meet_body .doc_box__text h3 {
+header #meet .meet_body .doc_box__text h3 {
   font-size: 18px;
   margin: 10px 0;
 }
-#meet .meet_body .doc_box__text small {
+header #meet .meet_body .doc_box__text small {
   font-size: 17px;
   font-weight: 300;
 }
-#meet .meet_body .doc_box__text p {
+header #meet .meet_body .doc_box__text p {
   margin: 25px 0 15px 0;
   color: #7e8890;
 }
-#meet .meet_body .doc_box__text ul {
+header #meet .meet_body .doc_box__text ul {
   display: flex;
   justify-content: start;
 }
-#meet .meet_body .doc_box__text ul li {
+header #meet .meet_body .doc_box__text ul li {
   display: inline-block;
   list-style: none;
   margin: 20px 10px 0 5px;
 }
-#meet .meet_body .doc_box img {
+header #meet .meet_body .doc_box img {
   width: 100%;
 }
-
-#service .service_grid {
+header #service .service_grid {
   display: flex;
   flex-wrap: wrap;
   margin: 50px 0;
 }
-#service .service_grid .service_element {
+header #service .service_grid .service_element {
   width: 30%;
   padding: 10px;
   margin: 10px auto;
   text-align: center;
 }
-#service .service_grid .service_element p {
+header #service .service_grid .service_element p {
   color: #747474;
   margin: 20px 0;
 }
-
-#tour {
+header #tour {
   color: white;
 }
-#tour .intro {
+header #tour .intro {
   padding: 100px 0;
 }
-#tour h2::after {
+header #tour h2::after {
   background-color: white;
 }
-
-#shades .blue_shades {
+header #shades .blue_shades {
   display: flex;
   width: 100%;
   text-align: center;
   color: white;
 }
-#shades .blue_shades .shade {
+header #shades .blue_shades .shade {
   padding: 15px;
 }
-#shades .blue_shades .shade p {
+header #shades .blue_shades .shade p {
   margin: 5px 0;
   font-size: 17px;
   line-height: 2;
 }
-#shades .blue_shades .shade1 {
+header #shades .blue_shades .shade1 {
   background-color: #3bafbf;
 }
-#shades .blue_shades .shade2 {
+header #shades .blue_shades .shade2 {
   background-color: #3697c3;
 }
-#shades .blue_shades .shade3 {
+header #shades .blue_shades .shade3 {
   background-color: #327ec7;
 }
-#shades .blue_shades button {
+header #shades .blue_shades button {
   background-color: transparent;
   padding: 10px 30px;
   margin: 20px 0 30px 0;
@@ -342,54 +344,53 @@ header .jumbotron__text button.btn_primary {
   border-radius: 0px;
   font-size: 14px;
 }
-
-#appointment {
+header #appointment {
   padding: 100px 0;
   color: white;
 }
-#appointment .appointment_form form {
+header #appointment .appointment_form form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   outline-color: #aaa9a9;
   border-color: rgba(183, 203, 206, 0.77);
 }
-#appointment .appointment_form form ::-moz-placeholder {
+header #appointment .appointment_form form ::-moz-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #aaa9a9;
   opacity: 1;
   /* Firefox */
 }
-#appointment .appointment_form form :-ms-input-placeholder {
+header #appointment .appointment_form form :-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #aaa9a9;
   opacity: 1;
   /* Firefox */
 }
-#appointment .appointment_form form ::placeholder {
+header #appointment .appointment_form form ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #aaa9a9;
   opacity: 1;
   /* Firefox */
 }
-#appointment .appointment_form form label {
+header #appointment .appointment_form form label {
   display: none;
   position: relative;
 }
-#appointment .appointment_form form label i {
+header #appointment .appointment_form form label i {
   position: absolute;
   display: block;
   background-color: yellow;
   fill: red;
 }
-#appointment .appointment_form form label.calendar i {
+header #appointment .appointment_form form label.calendar i {
   display: block;
 }
-#appointment .appointment_form form .form_input {
+header #appointment .appointment_form form .form_input {
   position: relative;
   width: calc(50% - 15px);
 }
-#appointment .appointment_form form .form_input input {
+header #appointment .appointment_form form .form_input input {
   width: 100%;
   height: 50px;
   padding: 5px 15px;
@@ -400,40 +401,47 @@ header .jumbotron__text button.btn_primary {
   border: 1px solid rgba(183, 203, 206, 0.77);
   outline: none;
 }
-#appointment .appointment_form form .form_input input#date {
+header #appointment .appointment_form form .form_input input#date {
   padding-left: 40px;
 }
-#appointment .appointment_form form .form_input i {
+header #appointment .appointment_form form .form_input i {
   position: absolute;
   left: 15px;
   top: 30px;
   color: #aaa9a9;
 }
-#appointment .appointment_form form .form_input#help_div {
+header #appointment .appointment_form form .form_input#help_div {
   width: 100%;
 }
-#appointment .appointment_form form .form_input#help_div #help {
+header #appointment .appointment_form form .form_input#help_div #help {
   margin-top: 15px;
   width: 100%;
   background-color: transparent !important;
   padding: 10px 15px;
   border: 1px solid rgba(183, 203, 206, 0.77);
 }
-#appointment .appointment_form form input[type=submit] {
+header #appointment .appointment_form form input[type=submit] {
   width: 100%;
   padding: 10px 0;
 }
-#appointment .appointment_form form input:hover,
-#appointment .appointment_form form #help:hover {
+header #appointment .appointment_form form input:hover,
+header #appointment .appointment_form form #help:hover {
   border-color: rgba(183, 203, 206, 0.5);
 }
-
-#divider {
+header #divider {
   height: 330px;
-  background-color: red;
+  background: #50bab6;
+  background: linear-gradient(90deg, #50bab6 0%, #33649f 100%);
 }
-
-footer .columns_foot {
+header #divider .img_slider {
+  display: flex;
+  justify-content: center;
+}
+header #divider .img_slider img {
+  height: 200px;
+  width: 200px;
+}
+header footer .columns_foot {
   width: 90%;
   margin: auto;
   padding: 5% 0;
@@ -442,33 +450,33 @@ footer .columns_foot {
   color: #666666;
   font-weight: 300;
 }
-footer .columns_foot .foot_col {
+header footer .columns_foot .foot_col {
   width: 30%;
   margin: 40px 20px;
 }
-footer .columns_foot .foot_col.col_1 h4 {
+header footer .columns_foot .foot_col.col_1 h4 {
   font-size: 17px;
   margin: 20px 0 10px 0;
   font-weight: 300;
   text-transform: uppercase;
 }
-footer .columns_foot .foot_col.col_1 ul {
+header footer .columns_foot .foot_col.col_1 ul {
   display: flex;
   justify-content: start;
 }
-footer .columns_foot .foot_col.col_1 ul li {
+header footer .columns_foot .foot_col.col_1 ul li {
   display: inline-block;
   list-style: none;
   margin: 20px 10px 0 5px;
 }
-footer .columns_foot .foot_col h3 {
+header footer .columns_foot .foot_col h3 {
   margin-top: 0;
   font-size: 17px;
   position: relative;
   font-family: "Montserrat", sans-serif;
   color: #333c4e;
 }
-footer .columns_foot .foot_col h3::after {
+header footer .columns_foot .foot_col h3::after {
   content: "";
   position: absolute;
   left: 0;
@@ -477,68 +485,68 @@ footer .columns_foot .foot_col h3::after {
   height: 2px;
   background-color: #816CB2;
 }
-footer .columns_foot .foot_col.col_2 {
+header footer .columns_foot .foot_col.col_2 {
   position: relative;
 }
-footer .columns_foot .foot_col.col_2 ul li {
+header footer .columns_foot .foot_col.col_2 ul li {
   list-style: none;
   line-height: 22px;
   padding: 10px 5px;
 }
-footer .columns_foot .foot_col.col_2 ul li i {
+header footer .columns_foot .foot_col.col_2 ul li i {
   padding: 0 5px;
   color: #816CB2;
   font-size: 22px;
 }
-footer .columns_foot .foot_col.col_2 .location {
+header footer .columns_foot .foot_col.col_2 .location {
   position: absolute;
   bottom: 0;
   height: calc(50% - 100px);
 }
-footer .columns_foot .foot_col.col_2 .location_content {
+header footer .columns_foot .foot_col.col_2 .location_content {
   padding: 30px 50px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
 }
-footer .columns_foot .foot_col.col_2 .location_content button {
+header footer .columns_foot .foot_col.col_2 .location_content button {
   margin-top: 20px;
   width: 100%;
   padding: 5px 0;
 }
-footer .columns_foot .foot_col.col_3 ul li {
+header footer .columns_foot .foot_col.col_3 ul li {
   color: #2b2b2b;
   padding: 10px 0;
   list-style: none;
 }
-footer .columns_foot .foot_col.col_3 ul li i {
+header footer .columns_foot .foot_col.col_3 ul li i {
   background-color: #816CB2;
   padding: 8px 10px;
   border-radius: 50%;
   margin-right: 10px;
 }
-footer .columns_foot .foot_col.col_3 button {
+header footer .columns_foot .foot_col.col_3 button {
   background-color: transparent;
   padding: 15px 40px;
   color: #333333;
   border: 1px solid #333333;
 }
-footer .row_foot {
+header footer .row_foot {
   margin-top: 40px;
   background-color: #f7f7f7;
   text-align: center;
   padding: 30px 0;
 }
-footer .row_foot ul li {
+header footer .row_foot ul li {
   position: relative;
   font-size: 14px;
   color: #666666;
   display: inline-block;
   padding: 10px 30px;
 }
-footer .row_foot ul li span {
+header footer .row_foot ul li span {
   color: blue;
 }
-footer .row_foot ul li::after {
+header footer .row_foot ul li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -548,10 +556,10 @@ footer .row_foot ul li::after {
   height: 18px;
   background-color: #666666;
 }
-footer .row_foot ul li#copyright i {
+header footer .row_foot ul li#copyright i {
   color: #666666;
   padding: 0 10px;
 }
-footer .row_foot ul li#copyright::after {
+header footer .row_foot ul li#copyright::after {
   background-color: transparent;
 }

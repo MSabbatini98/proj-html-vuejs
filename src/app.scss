@@ -17,6 +17,7 @@ header {
         text-transform: uppercase;
         color: white;
         transition: all .2s ease-in-out;
+        z-index: 100;
 
         // background-color: yellow;
 
@@ -69,10 +70,12 @@ header {
         }
     }
     .nav_bar.on_scroll {
+
         background-color: white!important;
-    ul li {
-      color: $color_bonus!important;
-    } 
+        ul li {
+        color: $color_bonus!important;
+        } 
+    }
 }
 
 // ************************* SECTION 1 WELCOME
@@ -327,7 +330,18 @@ header {
 // ************************* SECTION 7 DIVIDER
 #divider {
     height: 330px;
-    background-color: red;
+    background: rgb(80,186,182);
+    background: linear-gradient(90deg, rgba(80,186,182,1) 0%, rgba(51,100,159,1) 100%);
+
+    .img_slider {
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    }
 }
 
 
