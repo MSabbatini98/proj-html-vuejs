@@ -335,7 +335,101 @@
                 </div>
             </section>
 
-            
+            <!-- ? DIVIDER -->
+            <section id="divider">
+
+            </section>
+
+            <!-- ? FOOTER -->
+            <footer>
+                <div class="col_foot">
+                    <div class="foot_col col_1">
+                        <img src="img/medical_logo_1x_dark.png" alt="logo avada healt">
+                        <p class="mt_3">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolemue launti totam aperiam, eaque ipsa quae abillo. Invente veriatis et quasi architecto beatae luptatem accusantium, remaperiamsiat. Voluptatem accusest etsium doloremque laudaien. Lorem ipsum sits dolores ets unser.
+                        </p>
+                        <hr class="mt_2">
+                        <h4>learn more about us</h4>
+                        <ul>
+                            <li>
+                                <a href="facebook.com">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="twitter.com">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="instagram.com">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="youtube.com">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="foot_col col_2">
+                        <h3>Contact information</h3>
+                        <div class="contact_info">
+                            <ul class="mt_5">
+                                <li>
+                                    <!-- todo funzione che unisce address, city e nation -->
+                                    <i class="fas fa-map-marker"></i>
+                                    {{contacts.address}}, {{contacts.city}}, {{contacts.nation}}
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    {{contacts.phone}}
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="location">
+                            <div class="location_content">
+                                <p>For privacy reasons Google Maps needs your permission to be loaded</p>
+                                <button class="btn_primary" > 
+                                    I accept
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="foot_col col_3">
+                        <h3>Medical departments</h3>
+                        <ul class="mt_5">
+                            <li v-for ="department in departments">
+                                <i class="fas fa-chevron-right"></i>
+                                {{department}}
+                            </li>
+                        </ul>
+                        <button class="btn_primary mt_6">
+                            View our departments
+                        </button>
+                    </div>
+                </div>
+                <div class="row_foot">
+                    <ul>
+                        <li id="copyright">
+                            <i class="far fa-copyright"></i>
+                            Copyright 2012-2012  
+                        </li>
+                        <li>
+                            Avanda Theme by <span id="web_developer">Matteo Sabbatini</span>
+                        </li>
+                        <li>
+                            All rights Reserved
+                        </li>
+                        <li>
+                            Powered by carbon
+                        </li>
+                    </ul>
+                </div>
+            </footer>
         </main>
 
 
