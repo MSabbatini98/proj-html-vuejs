@@ -23,7 +23,7 @@
 <body>
     <div id="vue_box">
         <!-- ? HEADER -->
-        <header class="loginbody">
+        <header class="background">
             <!--? barra di navigazione -->
             <div class="nav_bar">
                 <div class="nav_bar__logo mt_1">
@@ -239,7 +239,7 @@
             </section>
 
             <!-- ? TOUR -->
-            <section id ="tour" class ="loginbody2">
+            <section id ="tour" class ="background2">
                 <div class="container">
                     <div class="intro">
                         <img  src="img/icon-7.png" alt="clipart di un occhio">
@@ -252,6 +252,7 @@
                     </div>
                 </div>
             </section>
+         
             <!-- ? SHADES -->
             <section id="shades">
                 <div class="blue_shades">
@@ -289,6 +290,52 @@
                 </div>
 
             </section>
+
+            <!-- ? APPOINTMENT -->
+            <section id="appointment" class="background3">
+                <div class="container">
+                    <div class="intro">
+                        <h2 >Make an appointment</h2>
+                        <p class="mt_8">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae                            
+                        </p>
+                        <div class="appointment_form">
+                            <form action="/action_page.php" class="mt_4">
+                                
+                                <div class="form_input">
+                                    <label for="name">Name*</label>
+                                    <input type="text" id="name" placeholder="Name*">
+                                </div>
+
+                                <div class="form_input">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" placeholder="Email*">
+                                </div>
+
+                                <div class="form_input">    
+                                    <label for="phone">Phone number</label>
+                                    <input type="tel" id="phone" pattern="[0-9]{8-10}"placeholder="Phone Number">
+                                </div>
+
+                                <div class="form_input">    
+                                    <label for="date" class="calendar"></label>
+                                    <input disabled="disabled" id="date" placeholder="Appointment Date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+
+                                <div class="form_input" id="help_div">
+                                    <label for="help"></label>
+                                    <textarea name="help" id="help" cols="100" rows="7"  placeholder="How can we help*"></textarea>
+                                </div>
+                                
+                                <input type="submit" value ="make an appointment" class="btn_primary mt_5"> 
+                            </form>
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+
+            
         </main>
 
 

@@ -15,13 +15,13 @@ h1 {
   text-transform: capitalize;
 }
 h1 span {
-  color: #3aafbf;
+  color: #816CB2;
 }
 
 h3 {
   font-size: 22px;
   font-weight: 300;
-  margin-top: 15px;
+  margin-top: 25px;
   text-transform: uppercase;
 }
 
@@ -40,8 +40,8 @@ p {
 
 .btn_primary,
 .btn_shades {
-  background-color: #3aafbf;
-  border-radius: 5px;
+  background-color: #816CB2;
+  border-radius: 2px;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -50,16 +50,23 @@ p {
   color: white;
 }
 
-.loginbody {
-  background-image: url("../img/header-image-homepage.jpg");
+.background,
+.background2,
+.background3 {
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.loginbody2 {
+.background {
+  background-image: url("../img/header-image-homepage.jpg");
+}
+
+.background2 {
   background-image: url("../img/paralax-bg-tour-facilities.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.background3 {
+  background-image: url("../img/make-an-appointment.jpg");
 }
 
 .intro {
@@ -156,6 +163,11 @@ i {
   background-color: #3f729b;
 }
 
+.fa-youtube {
+  padding: 10px 9px;
+  background-color: #cd201f;
+}
+
 header {
   display: flex;
   color: white;
@@ -184,7 +196,7 @@ header .nav_bar__links ul li {
   padding: 15px 20px;
 }
 header .nav_bar__links ul li :hover {
-  color: #3aafbf;
+  color: #816CB2;
 }
 header .nav_bar button.btn_primary {
   padding: 15px 25px;
@@ -196,7 +208,7 @@ header .jumbotron {
 }
 header .jumbotron__text {
   width: 60%;
-  margin-top: 23%;
+  margin-top: 30%;
   margin-left: 5%;
 }
 header .jumbotron__text p {
@@ -301,7 +313,7 @@ header .jumbotron__text button.btn_primary {
 
 #shades .blue_shades {
   display: flex;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   color: white;
 }
@@ -329,4 +341,89 @@ header .jumbotron__text button.btn_primary {
   border: 2px solid white;
   border-radius: 0px;
   font-size: 14px;
+}
+
+#appointment {
+  padding: 100px 0;
+  color: white;
+}
+#appointment .appointment_form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  outline-color: #aaa9a9;
+  border-color: rgba(183, 203, 206, 0.77);
+}
+#appointment .appointment_form form ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aaa9a9;
+  opacity: 1;
+  /* Firefox */
+}
+#appointment .appointment_form form :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aaa9a9;
+  opacity: 1;
+  /* Firefox */
+}
+#appointment .appointment_form form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aaa9a9;
+  opacity: 1;
+  /* Firefox */
+}
+#appointment .appointment_form form label {
+  display: none;
+  position: relative;
+}
+#appointment .appointment_form form label i {
+  position: absolute;
+  display: block;
+  background-color: yellow;
+  fill: red;
+}
+#appointment .appointment_form form label.calendar i {
+  display: block;
+}
+#appointment .appointment_form form .form_input {
+  position: relative;
+  width: calc(50% - 15px);
+}
+#appointment .appointment_form form .form_input input {
+  width: 100%;
+  height: 50px;
+  padding: 5px 15px;
+  margin: 15px 0;
+  border-radius: 0px;
+  background-color: transparent;
+  color: #aaa9a9;
+  border: 1px solid rgba(183, 203, 206, 0.77);
+  outline: none;
+}
+#appointment .appointment_form form .form_input input#date {
+  padding-left: 40px;
+}
+#appointment .appointment_form form .form_input i {
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  color: #aaa9a9;
+}
+#appointment .appointment_form form .form_input#help_div {
+  width: 100%;
+}
+#appointment .appointment_form form .form_input#help_div #help {
+  margin-top: 15px;
+  width: 100%;
+  background-color: transparent !important;
+  padding: 10px 15px;
+  border: 1px solid rgba(183, 203, 206, 0.77);
+}
+#appointment .appointment_form form input[type=submit] {
+  width: 100%;
+  padding: 10px 0;
+}
+#appointment .appointment_form form input:hover,
+#appointment .appointment_form form #help:hover {
+  border-color: rgba(183, 203, 206, 0.5);
 }

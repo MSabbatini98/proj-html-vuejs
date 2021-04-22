@@ -23,7 +23,7 @@ h1{
 h3 {
     font-size: $text_l;
     font-weight: 300;
-    margin-top: 15px;
+    margin-top: 25px;
     text-transform: uppercase;
 }
 h4 {
@@ -43,7 +43,7 @@ p {
 .btn_primary, 
 .btn_shades {
     background-color: $color_primary;
-    border-radius: 5px;
+    border-radius: 2px;
     font-size: $text_nav;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -53,16 +53,22 @@ p {
 
 }
 //* jumbotron background
-.loginbody {
-    background-image: url("../img/header-image-homepage.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-.loginbody2 {
-    background-image: url("../img/paralax-bg-tour-facilities.jpg");
+.background, 
+.background2,
+.background3 {
     background-size: cover;
     background-repeat: no-repeat ;
+}
+
+.background {
+    background-image: url("../img/header-image-homepage.jpg");
+}
+.background2 {
+    background-image: url("../img/paralax-bg-tour-facilities.jpg");
+}
+.background3 {
+    background-image: url("../img/make-an-appointment.jpg");
+
 }
 //* intro to every section
 .intro {
@@ -124,3 +130,9 @@ i {
     padding: 10px 11px;
     background-color: #3f729b;
 }
+.fa-youtube {
+    padding: 10px 9px;
+    background-color: #cd201f;
+}
+
+// mixin
