@@ -25,7 +25,7 @@
         <!-- ? HEADER -->
         <header class="background">
             <!--? barra di navigazione -->
-            <div class="nav_bar">
+            <div class="nav_bar" :class="{'on_scroll': !view.topOfPage}">
                 <div class="nav_bar__logo mt_1">
                     <img src="img/medical_logo_1x_light.png" alt="logo di avada health">
                 </div>
@@ -342,7 +342,7 @@
 
             <!-- ? FOOTER -->
             <footer>
-                <div class="col_foot">
+                <div class="columns_foot">
                     <div class="foot_col col_1">
                         <img src="img/medical_logo_1x_dark.png" alt="logo avada healt">
                         <p class="mt_3">

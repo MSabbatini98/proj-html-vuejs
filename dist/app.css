@@ -433,7 +433,7 @@ header .jumbotron__text button.btn_primary {
   background-color: red;
 }
 
-.col_foot {
+footer .columns_foot {
   width: 90%;
   margin: auto;
   padding: 5% 0;
@@ -442,34 +442,33 @@ header .jumbotron__text button.btn_primary {
   color: #666666;
   font-weight: 300;
 }
-.col_foot .foot_col {
+footer .columns_foot .foot_col {
   width: 30%;
   margin: 40px 20px;
-  padding: 20px;
 }
-.col_foot .foot_col.col_1 h4 {
+footer .columns_foot .foot_col.col_1 h4 {
   font-size: 17px;
   margin: 20px 0 10px 0;
   font-weight: 300;
   text-transform: uppercase;
 }
-.col_foot .foot_col.col_1 ul {
+footer .columns_foot .foot_col.col_1 ul {
   display: flex;
   justify-content: start;
 }
-.col_foot .foot_col.col_1 ul li {
+footer .columns_foot .foot_col.col_1 ul li {
   display: inline-block;
   list-style: none;
   margin: 20px 10px 0 5px;
 }
-.col_foot .foot_col h3 {
+footer .columns_foot .foot_col h3 {
   margin-top: 0;
   font-size: 17px;
   position: relative;
   font-family: "Montserrat", sans-serif;
   color: #333c4e;
 }
-.col_foot .foot_col h3::after {
+footer .columns_foot .foot_col h3::after {
   content: "";
   position: absolute;
   left: 0;
@@ -478,69 +477,68 @@ header .jumbotron__text button.btn_primary {
   height: 2px;
   background-color: #816CB2;
 }
-.col_foot .foot_col.col_2 {
+footer .columns_foot .foot_col.col_2 {
   position: relative;
 }
-.col_foot .foot_col.col_2 ul li {
+footer .columns_foot .foot_col.col_2 ul li {
   list-style: none;
   line-height: 22px;
   padding: 10px 5px;
 }
-.col_foot .foot_col.col_2 ul li i {
+footer .columns_foot .foot_col.col_2 ul li i {
   padding: 0 5px;
   color: #816CB2;
   font-size: 22px;
 }
-.col_foot .foot_col.col_2 .location {
+footer .columns_foot .foot_col.col_2 .location {
   position: absolute;
   bottom: 0;
   height: calc(50% - 100px);
 }
-.col_foot .foot_col.col_2 .location_content {
-  padding: 60px;
+footer .columns_foot .foot_col.col_2 .location_content {
+  padding: 30px 50px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.col_foot .foot_col.col_2 .location_content button {
+footer .columns_foot .foot_col.col_2 .location_content button {
   margin-top: 20px;
   width: 100%;
   padding: 5px 0;
 }
-.col_foot .foot_col.col_3 ul li {
+footer .columns_foot .foot_col.col_3 ul li {
   color: #2b2b2b;
   padding: 10px 0;
   list-style: none;
 }
-.col_foot .foot_col.col_3 ul li i {
+footer .columns_foot .foot_col.col_3 ul li i {
   background-color: #816CB2;
   padding: 8px 10px;
   border-radius: 50%;
   margin-right: 10px;
 }
-.col_foot .foot_col.col_3 button {
+footer .columns_foot .foot_col.col_3 button {
   background-color: transparent;
   padding: 15px 40px;
   color: #333333;
   border: 1px solid #333333;
 }
-
-.row_foot {
+footer .row_foot {
   margin-top: 40px;
   background-color: #f7f7f7;
   text-align: center;
   padding: 30px 0;
 }
-.row_foot ul li {
+footer .row_foot ul li {
   position: relative;
   font-size: 14px;
   color: #666666;
   display: inline-block;
   padding: 10px 30px;
 }
-.row_foot ul li span {
+footer .row_foot ul li span {
   color: blue;
 }
-.row_foot ul li::after {
+footer .row_foot ul li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -550,10 +548,10 @@ header .jumbotron__text button.btn_primary {
   height: 18px;
   background-color: #666666;
 }
-.row_foot ul li#copyright i {
+footer .row_foot ul li#copyright i {
   color: #666666;
   padding: 0 10px;
 }
-.row_foot ul li#copyright::after {
+footer .row_foot ul li#copyright::after {
   background-color: transparent;
 }

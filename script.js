@@ -22,15 +22,30 @@ var vue_box = new Vue(
             "Pre-natel Care",
             "Ultrasound Echocardiogram"
         ],
+        view: {
+            topOfPage: true
+        },
     },
-    methods:{
-
+    beforeMount() {
+        window.addEventListener('scroll', this.handleScroll)
     },
     mounted () {
         console.log("23");
+
     },
+    methods: {
+        handleScroll(){
+          if(window.pageYOffset>0){
+            if(this.view.topOfPage) this.view.topOfPage = false
+          } else {
+            if(!this.view.topOfPage) this.view.topOfPage = true
+          }
+        }
+      }
     }
 
 
 )
 // alert("hello");
+
+  
