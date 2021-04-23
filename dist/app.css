@@ -437,17 +437,13 @@ header .nav_bar.on_scroll ul li {
 }
 
 #divider {
-  height: 330px;
   background: #50bab6;
   background: linear-gradient(90deg, #50bab6 0%, #33649f 100%);
 }
-#divider .img_slider {
-  display: flex;
-  justify-content: center;
-}
-#divider .img_slider img {
-  height: 200px;
-  width: 200px;
+#divider .carousel_slider .slide_img {
+  align-self: center;
+  width: 100%;
+  padding: 30px;
 }
 
 footer .columns_foot {
@@ -542,15 +538,14 @@ footer .columns_foot .foot_col.col_3 button {
 footer .row_foot {
   margin-top: 40px;
   background-color: #f7f7f7;
-  text-align: center;
-  padding: 30px 0;
+  padding: 15px 0;
 }
 footer .row_foot ul li {
   position: relative;
   font-size: 14px;
-  color: #666666;
+  color: #2b2b2b;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 5px 10px;
 }
 footer .row_foot ul li span {
   color: blue;
@@ -559,14 +554,14 @@ footer .row_foot ul li::after {
   content: "";
   position: absolute;
   left: 0;
-  top: 10px;
+  top: 5px;
   bottom: 0;
   width: 1px;
   height: 18px;
-  background-color: #666666;
+  background-color: #2b2b2b;
 }
 footer .row_foot ul li#copyright i {
-  color: #666666;
+  color: #2b2b2b;
   padding: 0 10px;
 }
 footer .row_foot ul li#copyright::after {

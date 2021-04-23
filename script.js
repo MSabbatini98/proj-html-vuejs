@@ -9,6 +9,19 @@ var vue_box = new Vue(
             nation : "United Kingdom",
             phone : "1.800.458.556",
         },
+        images : [
+            "img/client-logos-1.png",
+            "img/client-logos-2.png",
+            "img/client-logos-3.png",
+            "img/client-logos-4.png",
+            "img/client-logos-1_modified.png",
+            "img/client-logos-2_modified.png",
+            "img/client-logos-3_modified.png",
+            "img/client-logos-4_modified.png",
+        ],
+        index : 0,
+        img_index_min : 0,
+        img_index_max : 4,
         link_list : [
             "home",
             "about",
@@ -22,6 +35,7 @@ var vue_box = new Vue(
             "Pre-natel Care",
             "Ultrasound Echocardiogram"
         ],
+
         view: {
             topOfPage: true
         },
@@ -31,7 +45,19 @@ var vue_box = new Vue(
     },
     mounted () {
         console.log("23");
+        setInterval(() => {
+            if(this.img_index_max == this.images.length) {
+                this.img_index_max = 0;
+            } else {
+                this.img_index_max++;
+            }
+            if(this.img_index_min  == this.images.length) {
+                this.img_index_min = 0;
+            }else { 
+                this.img_index_min++;
+            }
 
+        }, 2000);
     },
     methods: {
         handleScroll(){
@@ -41,6 +67,8 @@ var vue_box = new Vue(
             if(!this.view.topOfPage) this.view.topOfPage = true
           }
         }
+
+        
       }
     }
 

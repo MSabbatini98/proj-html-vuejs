@@ -338,12 +338,11 @@
             <!-- ? DIVIDER -->
             <section id="divider">
                 <div class="container">
-                    <div class="img_slider">
-                        <img src="img/client-logos-1-200x188.png" alt="">
-                        <img src="img/client-logos-2-200x188.png" alt="">
-                        <img src="img/client-logos-3-200x188.png" alt="">
+                    <div class="carousel_slider">
+                        <div class="slide_img" >
+                            <img  v-for="img in images.slice(img_index_min, img_index_max)" :src="img" alt="logo di uno sponsor">
+                        </div>
                     </div>
-
                 </div>
             </section>
 

@@ -329,19 +329,19 @@ header {
 
 // ************************* SECTION 7 DIVIDER
 #divider {
-    height: 330px;
     background: rgb(80,186,182);
     background: linear-gradient(90deg, rgba(80,186,182,1) 0%, rgba(51,100,159,1) 100%);
 
-    .img_slider {
-        display: flex;
-        justify-content: center;
+    .carousel_slider {
 
-        img {
-            height: 200px;
-            width: 200px;
+        .slide_img{
+            align-self: center;
+            width: 100%;
+            padding: 30px;
+            // border: red 2px solid;
         }
     }
+
 }
 
 
@@ -456,16 +456,15 @@ footer {
     .row_foot {
         margin-top: 40px;
         background-color: $color_bg_greyish;
-        text-align: center;
-        padding: 30px 0;
+        padding: 15px 0;
         ul {
             li {
                 position: relative;
                 font-size: $text_s;
-                color: $color_text_footer;
+                color: $color_footer_row;
                 display: inline-block;
-                padding: 10px 30px;
-                
+                padding: 5px 10px;
+            
                 span {
                     color: blue;
                 }
@@ -474,15 +473,15 @@ footer {
                 content: "";
                 position: absolute;
                 left: 0;
-                top: 10px;
+                top: 5px;
                 bottom: 0;
                 width: 1px;
                 height: 18px;
-                background-color: $color_text_footer;
+                background-color: $color_footer_row;
             }
             li#copyright {
                 i {
-                    color: $color_text_footer;
+                    color: $color_footer_row;
                     padding: 0 10px;
                 }
             
